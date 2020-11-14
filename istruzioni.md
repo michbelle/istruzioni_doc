@@ -15,12 +15,12 @@ docker run -it --name ______  image(ex. ubuntu)
 docker run -it --gpus all --env=DISPLAY --env=QT_X11_NO_MITSHM=1 -v /tmp/.X11-unix:/tmp/.X11-unix ros2_foxy /bin/bash
 ```
 
-###start a container
+### start a container
 
 ```sh
 docker start ______
 ```
-###execute other commands on existing and alive docker
+### execute other commands on existing and alive docker
 to launch the terminal in bash mode from ____ docker
 ```sh
 docker exec -it ______ bash
