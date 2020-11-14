@@ -1,6 +1,6 @@
 # Docker instruction
 
-Follow instruction on [site](https://collabnix.com/introducing-new-docker-cli-api-support-for-nvidia-gpus-under-docker-engine-19-03-0-beta-release/) for using gpu inside docker.
+Follow instruction on this [site](https://collabnix.com/introducing-new-docker-cli-api-support-for-nvidia-gpus-under-docker-engine-19-03-0-beta-release/) for using gpu inside docker.
 
 ### launch a docker from image
 
@@ -25,4 +25,4 @@ to launch the terminal in bash mode from ____ docker
 ```sh
 docker exec -it ______ bash
 ```
-
+Work fine with rviz and gazebo
