@@ -11,6 +11,12 @@ docker run -it --name ______  image(ex. ubuntu)
 ```
 ##### for nvidia docker
 
+First run   
+```sh
+xhost +local:docker
+```
+
+then
 ```sh
 docker run -it --gpus all --env=DISPLAY --env=QT_X11_NO_MITSHM=1 -v /tmp/.X11-unix:/tmp/.X11-unix ros2_foxy /bin/bash
 ```
