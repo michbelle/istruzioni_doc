@@ -45,10 +45,8 @@ libGL error:.....
 ```
 
 then you should check that your machine and your docker have the same nvidia driver.  
-download nvidia driver from site and run this commands:  
+download nvidia driver in docker from site and run this commands:  
 ```sh
 chmod +x NVIDIA-DRIVER.run
 ./NVIDIA-DRIVER.run -a -N --ui=none --no-kernel-module
 ```
-
-first one to avoid not sudo access
