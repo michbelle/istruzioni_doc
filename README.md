@@ -11,6 +11,8 @@ docker run -it --name ______  image(ex. ubuntu)
 ```
 ##### for nvidia docker
 
+use gpu and not cpu for grapich  
+
 First run   
 ```sh
 xhost +local:docker
@@ -36,3 +38,17 @@ maybe need a restart:
 ```sh
 service docker restart
 ```
+
+if it doesn't work and a error like this pop up  
+```sh
+libGL error:.....
+```
+
+then you should check that your machine and your docker have the same nvidia driver.  
+download nvidia driver from site and run this commands:  
+```sh
+chmod +x NVIDIA-DRIVER.run
+./NVIDIA-DRIVER.run -a -N --ui=none --no-kernel-module
+```
+
+first one to avoid not sudo access
